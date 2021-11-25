@@ -1,4 +1,5 @@
-﻿using CleanArch.Application.Interfaces;
+﻿using AutoMapper;
+using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModels;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.Core.Bus;
@@ -15,19 +16,18 @@ namespace CleanArch.Application.Services
     {
         private readonly ICourseRepository _courseRepository;
         private readonly IMediatorHandler _bus;
+        private readonly IMapper _autoMapper;
 
-        public CourseService(ICourseRepository courseRepository, IMediatorHandler bus)
+        public CourseService(ICourseRepository courseRepository, IMediatorHandler bus, IMapper autoMapper)
         {
             this._courseRepository = courseRepository;
             this._bus = bus;
+            this._autoMapper = autoMapper;
         }
 
         public void Create(CourseViewModel coursViewModel)
         {
-            var createCourseCommand = new CreateCoursCommand(coursViewModel.Name,
-                coursViewModel.Description, coursViewModel.ImageUrl);
-
-            this._bus.SendCommandAsync(createCourseCommand);
+            this._bus.SendCommandAsync(this._autoMapper.Map<CreateCoursCommand>(coursViewModel));
         }
 
         public CourseViewModel GetCourses()
