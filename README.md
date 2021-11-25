@@ -76,4 +76,5 @@ For now no comments.
 It uses nuget **[MediatR](https://github.com/jbogard/MediatR)**.
 
 # Links
-Based on https://hyland.udemy.com/course/getting-started-with-net-core-clean-architecture/learn/lecture/14541160#overview
+Based on https://hyland.udemy.com/course/getting-started-with-net-core-clean-architecture/learn/lecture/14541160#overview   
+https://github.com/innovativeinstitution/CleanArchDemo
