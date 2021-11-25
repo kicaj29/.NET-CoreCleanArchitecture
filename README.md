@@ -1,3 +1,4 @@
+- [Deps diagram](#deps-diagram)
 - [CleanArch.Mvc](#cleanarchmvc)
 - [CleanArch.Domain](#cleanarchdomain)
 - [CleanArch.Domain.Core](#cleanarchdomaincore)
@@ -6,6 +7,10 @@
 - [CleanArch.Infra.IoC](#cleanarchinfraioc)
 - [CleanArch.Infra.Bus](#cleanarchinfrabus)
 - [Links](#links)
+
+# Deps diagram
+
+![002-depsDiagram.png](./images/002-depsDiagram.png)
 
 # CleanArch.Mvc
 ![001-CleanArchMvc](./images/001-CleanArchMvc.png)
