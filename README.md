@@ -3,6 +3,7 @@
 - [CleanArch.Infra.Data](#cleanarchinfradata)
 - [CleanArch.Application](#cleanarchapplication)
 - [CleanArch.Infra.IoC](#cleanarchinfraioc)
+- [CleanArch.Infra.Bus](#cleanarchinfrabus)
 - [Links](#links)
 
 # CleanArch.Mvc
@@ -63,6 +64,10 @@ For now no comments.
 # CleanArch.Infra.IoC
 
 For now no comments.
+
+# CleanArch.Infra.Bus
+
+It uses nuget **MediatR**.
 
 # Links
 Based on https://hyland.udemy.com/course/getting-started-with-net-core-clean-architecture/learn/lecture/14541160#overview
