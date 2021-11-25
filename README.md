@@ -7,9 +7,13 @@ add-migration "InitialMigration" -Context ApplicationDbContext
 ```
 
 * Update database
+
+In PMC console run: 
 ```
 update-database
 ```
+
+>NOTE: it might be necessary to run it with parameter like this `update-database -Context ApplicationDbContext`
 
 * Register a new user
 
@@ -29,6 +33,22 @@ It might be necessary to run in PMC command `dotnet restore` after project creat
 # CleanArch.Infra.Data
 
 It might be necessary to run in PMC command `dotnet restore` after project creation to compile it. More here: https://stackoverflow.com/questions/48440223/assets-file-project-assets-json-not-found-run-a-nuget-package-restore
+
+* Add migration
+
+Make sure that in PMC is selected default project `CleanArch.Infra.Data`.
+
+```
+add-migration "InitialMigration" -Context UniversityDbContext
+```
+
+* Update database
+
+In PMC console run:
+
+```
+update-database -Context UniversityDBContext
+```
 
 # Links
 Based on https://hyland.udemy.com/course/getting-started-with-net-core-clean-architecture/learn/lecture/14541160#overview
