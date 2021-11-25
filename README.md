@@ -1,5 +1,6 @@
 - [CleanArch.Mvc](#cleanarchmvc)
 - [CleanArch.Domain](#cleanarchdomain)
+- [CleanArch.Domain.Core](#cleanarchdomaincore)
 - [CleanArch.Infra.Data](#cleanarchinfradata)
 - [CleanArch.Application](#cleanarchapplication)
 - [CleanArch.Infra.IoC](#cleanarchinfraioc)
@@ -38,6 +39,11 @@ Set value True (this implementation does not support sending an email).
 
 It might be necessary to run in PMC command `dotnet restore` after project creation to compile it. More here: https://stackoverflow.com/questions/48440223/assets-file-project-assets-json-not-found-run-a-nuget-package-restore
 
+
+# CleanArch.Domain.Core
+
+Contains interfaces and some basic types for message bus.
+
 # CleanArch.Infra.Data
 
 It might be necessary to run in PMC command `dotnet restore` after project creation to compile it. More here: https://stackoverflow.com/questions/48440223/assets-file-project-assets-json-not-found-run-a-nuget-package-restore
@@ -67,7 +73,7 @@ For now no comments.
 
 # CleanArch.Infra.Bus
 
-It uses nuget **MediatR**.
+It uses nuget **[MediatR](https://github.com/jbogard/MediatR)**.
 
 # Links
 Based on https://hyland.udemy.com/course/getting-started-with-net-core-clean-architecture/learn/lecture/14541160#overview
